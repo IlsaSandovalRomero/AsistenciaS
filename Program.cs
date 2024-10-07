@@ -1,4 +1,5 @@
-﻿using System;
+﻿// C:\Users\Romero Soza\source\repos\Asistencia\
+using System;
 using System.Collections.Generic;
 using Asistencia;
 
@@ -54,8 +55,6 @@ namespace Program
                 } while (totalDeSesiones <= 0);
 
 
-                // Ingresar y validar las sesiones asistidas
-
                 int totalSesionesAsistidas;
                 do
                 {
@@ -78,7 +77,7 @@ namespace Program
                 };
             }
 
-            // Calcular y mostrar la información de cada estudiante
+            //  mostrar la info de cada estudiante
             foreach (var estudiante in estudiantes)
             {
                 estudiante.MostrarInfo();
