@@ -78,7 +78,11 @@ namespace Program
                 };
             }
 
-           
+            // Calcular y mostrar la información de cada estudiante
+            foreach (var estudiante in estudiantes)
+            {
+                estudiante.MostrarInfo();
+            }
         }
     }
 }
