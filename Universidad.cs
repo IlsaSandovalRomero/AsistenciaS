@@ -14,6 +14,12 @@ public static class Universidad
         // Clase interna Asistencia para calcular el porcentaje y si aprueba
         public class Asistencia
         {
+            //Método estático para calcular el porcentaje de asistencia
+            public static double Porcentaje(int totalsesionesAsistidas, int totalDeSesiones)
+            {
+                if (totalDeSesiones == 0) return 0;
+                return (totalsesionesAsistidas / (double)totalDeSesiones) * 100;
+            }
 
 
 
