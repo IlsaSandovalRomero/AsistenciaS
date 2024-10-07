@@ -1,6 +1,6 @@
-﻿//C:\Users\MSI\source\repos
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Asistencia;
 
 namespace Program
 {
@@ -68,7 +68,17 @@ namespace Program
                     }
 
                 } while (totalSesionesAsistidas < 0 || totalSesionesAsistidas > totalDeSesiones);
+
+
+                estudiantes[i] = new Universidad.Estudiante
+                {
+                    Nombre = nombre,
+                    TotalDeSesiones = totalDeSesiones,
+                    totalSesionesAsistidas = totalSesionesAsistidas
+                };
             }
+
+           
         }
     }
 }
