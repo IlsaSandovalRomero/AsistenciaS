@@ -21,7 +21,11 @@ public static class Universidad
                 return (totalsesionesAsistidas / (double)totalDeSesiones) * 100;
             }
 
-
+            // Método estático para verificar si cumple con el mínimo de asistencia
+            public static bool MinimoDeAsistencia(double porcentaje)
+            {
+                return porcentaje >= 75; // Requiere al menos 75% de asistencia
+            }
 
 
 
